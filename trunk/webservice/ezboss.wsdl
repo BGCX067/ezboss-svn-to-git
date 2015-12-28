@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://127.0.0.1/ezboss/webservice/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="EZBossWebService" targetNamespace="http://127.0.0.1/ezboss/webservice/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://127.0.0.1/ezboss/webservice/">        
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="querryUserBalanceRequest">
+    <wsdl:part name="querryUserBalanceRequestUserId" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:message name="querryUserBalanceResponse">
+    <wsdl:part name="querryUserBalanceResponse" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:message name="addUserBalanceRequest">
+  	<wsdl:part name="addUserBalanceRequestUserId" type="xsd:string"></wsdl:part>
+  	<wsdl:part name="addUserBalanceRequestAmmount" type="xsd:string"></wsdl:part>
+  	<wsdl:part name="addUserBalanceRequestWay" type="xsd:string"></wsdl:part>
+
+  </wsdl:message>
+  <wsdl:message name="addUserBalanceResponse">
+  	<wsdl:part name="addUserBalanceResponse" type="xsd:string"></wsdl:part>
+  </wsdl:message>
+
+
+
+  <wsdl:message name="querryUserRechargeHistoryRequest">
+  	<wsdl:part name="querryUserRechargeHistoryUserId" type="xsd:string"></wsdl:part>
+  	<wsdl:part name="querryUserRechargeHistoryPerPage" type="xsd:string"></wsdl:part>
+  	<wsdl:part name="querryUserRechargeHistoryCurrPage" type="xsd:string"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="querryUserRechargeHistoryResponse">
+  	<wsdl:part name="querryUserRechargeHistoryResponse"
+  		type="xsd:string">
+  	</wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="querryUserStatusRequest">
+  	<wsdl:part name="querryUserStatusUserId" type="xsd:string"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="querryUserStatusResponse">
+  	<wsdl:part name="querryUserStatusResponse" type="xsd:string"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="querryUserStatusDescRequest">
+  	<wsdl:part name="querryUserStatusDescUserId" type="xsd:string"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="querryUserStatusDescResponse">
+  	<wsdl:part name="querryUserStatusDescResponse" type="xsd:string"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="buyProductRequest">
+  	<wsdl:part name="buyProductRequestUserId" type="xsd:string"></wsdl:part>
+  	<wsdl:part name="buyProductRequestProductCode" type="xsd:string"></wsdl:part>
+  	<wsdl:part name="buyProductRequestCount" type="xsd:string"></wsdl:part>
+  	<wsdl:part name="buyProductRequestPlatform" type="xsd:string"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="buyProductResponse">
+  	<wsdl:part name="buyProductResponse" type="xsd:string"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="NewOperationRequest">
+  	<wsdl:part name="NewOperationRequest" type="xsd:string"></wsdl:part>
+  	<wsdl:part name="NewPart" type="xsd:string"></wsdl:part>
+  	<wsdl:part name="NewPart1" type="xsd:string"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="NewOperationResponse">
+  	<wsdl:part name="NewOperationResponse" type="xsd:string"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="NewOperation1Request">
+  	<wsdl:part name="NewOperation1Request" type="xsd:string"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="NewOperation1Response">
+  	<wsdl:part name="NewOperation1Response" type="xsd:string"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="querryServiceTimeRequest1">
+  	<wsdl:part name="querryServiceTimeUserId" type="xsd:string"></wsdl:part>
+  	<wsdl:part name="querryServiceTimeProductCode" type="xsd:string"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="querryServiceTimeResponse1">
+  	<wsdl:part name="querryServiceTimeResponse" type="xsd:string"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="querryIsInServiceRequest1">
+  	<wsdl:part name="querryIsInServiceUserId" type="xsd:string"></wsdl:part>
+  	<wsdl:part name="querryIsInServiceProductCode" type="xsd:string"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="querryIsInServiceResponse1">
+  	<wsdl:part name="querryIsInServiceResponse" type="xsd:string"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="querryUserTransactionHistoryRequest1">
+  	<wsdl:part name="querryUserTransactionHistoryUserId" type="xsd:string"></wsdl:part>
+  	<wsdl:part name="querryUserTransactionHistoryPerPage" type="xsd:string"></wsdl:part>
+  	<wsdl:part name="querryUserTransactionHistoryCurrPage" type="xsd:string"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="querryUserTransactionHistoryResponse1">
+  	<wsdl:part name="querryUserTransactionHistoryResponse" type="xsd:string"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="querryProductListRequest1">
+  </wsdl:message>
+  <wsdl:message name="querryProductListResponse1">
+  	<wsdl:part name="querryProductListResponse" type="xsd:string"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="updateUserStatusRequest1">
+  	<wsdl:part name="updateUserStatusUserId" type="xsd:string"></wsdl:part>
+  	<wsdl:part name="updateUserStatusStatus" type="xsd:string"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="updateUserStatusResponse1">
+  	<wsdl:part name="updateUserStatusResponse" type="xsd:string"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="EZBossWebService">
+    <wsdl:operation name="querryUserBalance">
+      <wsdl:input message="tns:querryUserBalanceRequest"/>
+      <wsdl:output message="tns:querryUserBalanceResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="addUserBalance">
+    	<wsdl:input message="tns:addUserBalanceRequest"></wsdl:input>
+    	<wsdl:output message="tns:addUserBalanceResponse"></wsdl:output>
+        </wsdl:operation>
+    <wsdl:operation name="querryUserRechargeHistory">
+    	<wsdl:input message="tns:querryUserRechargeHistoryRequest"></wsdl:input>
+    	<wsdl:output message="tns:querryUserRechargeHistoryResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="querryUserStatus">
+    	<wsdl:input message="tns:querryUserStatusRequest"></wsdl:input>
+    	<wsdl:output message="tns:querryUserStatusResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="querryUserStatusDesc">
+    	<wsdl:input message="tns:querryUserStatusDescRequest"></wsdl:input>
+    	<wsdl:output message="tns:querryUserStatusDescResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buyProduct">
+    	<wsdl:input message="tns:buyProductRequest"></wsdl:input>
+    	<wsdl:output message="tns:buyProductResponse"></wsdl:output>
+    </wsdl:operation>    <wsdl:operation name="querryServiceTime">    	<wsdl:input message="tns:querryServiceTimeRequest1"></wsdl:input>    	<wsdl:output message="tns:querryServiceTimeResponse1"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="querryIsInService">
+    	<wsdl:input message="tns:querryIsInServiceRequest1"></wsdl:input>
+    	<wsdl:output message="tns:querryIsInServiceResponse1"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="querryUserTransactionHistory">
+    	<wsdl:input message="tns:querryUserTransactionHistoryRequest1"></wsdl:input>
+    	<wsdl:output message="tns:querryUserTransactionHistoryResponse1"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="querryProductList">
+    	<wsdl:input message="tns:querryProductListRequest1"></wsdl:input>
+    	<wsdl:output message="tns:querryProductListResponse1"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateUserStatus">
+    	<wsdl:input message="tns:updateUserStatusRequest1"></wsdl:input>
+    	<wsdl:output message="tns:updateUserStatusResponse1"></wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="EZBossWebServiceSOAP"
+  	type="tns:EZBossWebService">
+
+  	<soap:binding style="document"
+  		transport="http://schemas.xmlsoap.org/soap/http" />
+  	<wsdl:operation name="querryUserBalance">
+
+  		<soap:operation
+  			soapAction="http://127.0.0.1/ezboss/webservice/querryUserBalance" />
+  		<wsdl:input>
+
+  			<soap:body use="literal" />
+  		</wsdl:input>
+  		<wsdl:output>
+
+  			<soap:body use="literal" />
+  		</wsdl:output>
+  	</wsdl:operation>
+  	<wsdl:operation name="addUserBalance">
+
+  		<soap:operation
+  			soapAction="http://127.0.0.1/ezboss/webservice/addUserBalance" />
+  		<wsdl:input>
+
+  			<soap:body use="literal" />
+  		</wsdl:input>
+  		<wsdl:output>
+
+  			<soap:body use="literal" />
+  		</wsdl:output>
+  	</wsdl:operation>
+  	<wsdl:operation name="querryUserRechargeHistory">
+
+  		<soap:operation
+  			soapAction="http://127.0.0.1/ezboss/webservice/querryUserRechargeHistory" />
+  		<wsdl:input>
+
+  			<soap:body use="literal" />
+  		</wsdl:input>
+  		<wsdl:output>
+
+  			<soap:body use="literal" />
+  		</wsdl:output>
+  	</wsdl:operation>
+  	<wsdl:operation name="querryUserStatus">
+
+  		<soap:operation
+  			soapAction="http://127.0.0.1/ezboss/webservice/querryUserStatus" />
+  		<wsdl:input>
+
+  			<soap:body use="literal" />
+  		</wsdl:input>
+  		<wsdl:output>
+
+  			<soap:body use="literal" />
+  		</wsdl:output>
+  	</wsdl:operation>
+  	<wsdl:operation name="querryUserStatusDesc">
+
+  		<soap:operation
+  			soapAction="http://127.0.0.1/ezboss/webservice/querryUserStatusDesc" />
+  		<wsdl:input>
+
+  			<soap:body use="literal" />
+  		</wsdl:input>
+  		<wsdl:output>
+
+  			<soap:body use="literal" />
+  		</wsdl:output>
+  	</wsdl:operation>
+  	<wsdl:operation name="buyProduct">
+
+  		<soap:operation
+  			soapAction="http://127.0.0.1/ezboss/webservice/buyProduct" />
+  		<wsdl:input>
+
+  			<soap:body use="literal" />
+  		</wsdl:input>
+  		<wsdl:output>
+
+  			<soap:body use="literal" />
+  		</wsdl:output>
+  	</wsdl:operation>
+  	<wsdl:operation name="querryServiceTime">
+
+  		<soap:operation
+  			soapAction="http://127.0.0.1/ezboss/webservice/querryServiceTime" />
+  		<wsdl:input>
+
+  			<soap:body use="literal" />
+  		</wsdl:input>
+  		<wsdl:output>
+
+  			<soap:body use="literal" />
+  		</wsdl:output>
+  	</wsdl:operation>
+  	<wsdl:operation name="querryIsInService">
+
+  		<soap:operation
+  			soapAction="http://127.0.0.1/ezboss/webservice/querryIsInService" />
+  		<wsdl:input>
+
+  			<soap:body use="literal" />
+  		</wsdl:input>
+  		<wsdl:output>
+
+  			<soap:body use="literal" />
+  		</wsdl:output>
+  	</wsdl:operation>
+  	<wsdl:operation name="querryUserTransactionHistory">
+
+  		<soap:operation
+  			soapAction="http://127.0.0.1/ezboss/webservice/querryUserTransactionHistory" />
+  		<wsdl:input>
+
+  			<soap:body use="literal" />
+  		</wsdl:input>
+  		<wsdl:output>
+
+  			<soap:body use="literal" />
+  		</wsdl:output>
+  	</wsdl:operation>
+  	<wsdl:operation name="querryProductList">
+
+  		<soap:operation
+  			soapAction="http://127.0.0.1/ezboss/webservice/querryProductList" />
+  		<wsdl:input>
+
+  			<soap:body use="literal" />
+  		</wsdl:input>
+  		<wsdl:output>
+
+  			<soap:body use="literal" />
+  		</wsdl:output>
+  	</wsdl:operation>
+  	<wsdl:operation name="updateUserStatus">
+
+  		<soap:operation
+  			soapAction="http://127.0.0.1/ezboss/webservice/updateUserStatus" />
+  		<wsdl:input>
+
+  			<soap:body use="literal" />
+  		</wsdl:input>
+  		<wsdl:output>
+
+  			<soap:body use="literal" />
+  		</wsdl:output>
+  	</wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="EZBossWebService">
+    <wsdl:port binding="tns:EZBossWebServiceSOAP" name="EZBossWebServiceSOAP">
+      <soap:address location="http://127.0.0.1/ezboss/webservice/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
